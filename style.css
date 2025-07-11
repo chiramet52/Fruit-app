@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Sarabun&display=swap');
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Sarabun', sans-serif;
+  background: linear-gradient(135deg, #e0f7e9, #d0e9ff, #f3e5f5);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #2c3e50;
+}
+.page {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 480px;
+  padding: 20px;
+  background: #ffffffcc;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+.page.active {
+  display: flex;
+}
+h1, h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #2c6e49;
+}
+button {
+  padding: 14px;
+  margin: 10px 0;
+  width: 100%;
+  max-width: 300px;
+  border: none;
+  border-radius: 10px;
+  background-color: #4caf50;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: background-color 0.3s;
+}
+button:hover {
+  background-color: #388e3c;
+}
+input[type="date"] {
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 2px solid #81c784;
+}
+.hidden {
+  display: none;
+}

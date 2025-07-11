@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>โปรแกรมคำนวณราคาผลไม้</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main id="page-home" class="page active">
+    <h1>🍉 โปรแกรมราคาผลไม้</h1>
+    <button id="btnToday">📅 สร้างตารางใหม่ (วันนี้)</button>
+    <button id="btnChoose">🕰 ดูตารางย้อนหลัง</button>
+    <input type="date" id="dateChooser" class="hidden">
+  </main>
+
+  <main id="page-calc" class="page">
+    <header>
+      <button id="btnBack">🔙 กลับ</button>
+      <h2 id="headerDate">--</h2>
+      <button id="btnNew">🆕 ตารางใหม่</button>
+      <button id="btnSave">💾 บันทึกข้อมูล</button>
+    </header>
+
+    <button id="btnAdd">➕ เพิ่มผลไม้</button>
+    <table>
+      <thead>
+        <tr><th>ชื่อ</th><th>จำนวน</th><th>ราคา/กก.</th><th>รวม</th><th>ลบ</th></tr>
+      </thead>
+      <tbody id="fruitBody"></tbody>
+      <tfoot><tr><td colspan="3">รวมทั้งหมด</td><td id="grandTotal">0.00</td><td></td></tr></tfoot>
+    </table>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
